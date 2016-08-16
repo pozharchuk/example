@@ -1,0 +1,306 @@
+/*   
+Theme Name: GMG
+Theme URI: http://www.gmg.od.ua/
+Description: For GrandMasterGallery
+Author: Pozharchuk_Victor
+Version: 1.0
+*/
+* {
+	box-sizing: border-box;
+
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: 'Roboto Condensed';
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway';
+}
+
+.social {
+	text-align: right;
+	margin-right: 10px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+} 
+
+.preload {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+.preload h1 {
+	position: absolute;
+	color: white;
+	font-size: 50px;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;	
+	display: none;
+}
+
+
+header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+header span { 
+	vertical-align: bottom;
+	margin-right: 20px;
+}
+
+header .logo {
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+header .logo a {
+	margin: 0 auto;
+	display: block;
+	width: 100px;
+	color: black;
+	line-height: 122px;
+	font-size: 50px;
+	padding: 
+}
+
+.navbar {
+	background-color: white;
+	border: 0;
+	padding: 40px	10px;
+	font-family: 'Roboto Condensed';
+	font-size: 20px;
+	color: rgb(0,75,110);
+	margin: 0;
+}
+
+.nav {
+	float: right;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: rgb(0,75,110);
+}
+
+li.dropdown {
+	position: static;
+}
+
+.navbar-nav {
+	position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	width: 370px;
+	position: absolute;
+}
+
+.dropdown-menu div {
+	display: inline-block;
+	margin: 0 25px;
+}
+
+.dropdown-menu a {
+	display: block;
+	color: #777;
+	font-size: 20px;
+}
+
+.dropdown-menu a:hover {
+	display: block;
+	color: rgb(0,75,110);
+}
+
+
+.slick-slide {
+	transform: rotateX(30deg);
+	transition-property: transform;
+    transition-duration: 2s;
+    cursor: pointer;
+}
+
+.slick-slide:focus {
+	outline: none;
+}
+
+.slider-brands-for .slick-slide {
+	margin-bottom: 40px;
+}
+
+.slick-slide.slick-center {
+	transform: rotateX(0deg);
+}
+
+.slider-brands-for .slick-slide {
+	transform: rotateX(0deg);
+}
+
+.slick-slide div {
+	background-color: black;
+}
+
+.slick-slide img {
+	opacity: .4;
+}
+
+.slider-brands-nav img {
+	opacity: .4;
+	width: 670px;
+	max-height: 447px;
+}
+
+.slick-prev	{
+	 z-index: 3;  
+}
+
+.slick-center img {
+	opacity: 1;
+}
+
+.slider-brands-for {
+	padding: 20px 100px 0;
+	visibility: hidden;
+}
+
+
+.slider-brands-for img {
+	float: left;
+	margin-right: 30px;
+	width: auto;
+	opacity: 1;
+}
+
+.slider-brands-nav {
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 5;
+	
+}
+
+.popup div:focus {
+	outline: none;
+}
+
+.popup > div  {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  max-height: 100%;
+  overflow: hidden;
+  /*margin: auto;*/
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.popup img {
+	width: 100%;
+}
+
+.popup .cl_popup {
+	position: absolute;
+	right: 15px;
+	top: -10px;
+	color: grey;
+	font-size: 60px;
+	cursor: pointer;
+	transform: rotate(45deg);
+	font-family: auto;
+}
+
+.popup .cl_popup:hover {
+	color: rgba(225,225,225,.6);
+}
+
+.popup .left {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50%; 
+  left: 10px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.popup .right {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: 50%; 
+  right: 10px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.popup [data-sliderfor] {
+	width: 70%;
+    height: 70%;
+	background-color: white;
+	padding: 40px;
+}
+
+.popup [data-sliderfor] img {
+	width: 30%;
+	height: auto;
+	float: left;
+	margin-right: 30px;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.slick-arrow {
+	display: none !important;
+}
+
+.slick-slider:hover .slick-arrow {
+	display: block !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
